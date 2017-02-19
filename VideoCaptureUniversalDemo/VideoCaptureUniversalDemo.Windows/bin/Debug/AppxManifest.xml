@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+  <!--
+    這個套件資訊清單檔案由建置流程產生。
+
+    對這個檔案所做的變更將在重新產生檔案時遺失。若要更正這個檔案中的錯誤，請編輯來源 .appxmanifest 檔案。
+
+    如需有關套件資訊清單檔案的詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="ca2fecc1-f667-408e-ab38-0ed551346aae" Publisher="CN=IISU" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Properties>
+    <DisplayName>VideoCaptureUniversalDemo.Windows</DisplayName>
+    <PublisherDisplayName>IISU</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="ZH-TW" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="VideoCaptureUniversalDemo.Windows.exe" EntryPoint="VideoCaptureUniversalDemo.Windows.App">
+      <m2:VisualElements DisplayName="VideoCaptureUniversalDemo.Windows" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="VideoCaptureUniversalDemo.Windows" ForegroundText="light" BackgroundColor="#464646">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="SharedGUID" Value="8b86b985-3cbc-40bb-9987-d351b6756dbf" />
+    <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />
+    <build:Item Name="VisualStudio" Version="12.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2013" />
+    <build:Item Name="OperatingSystem" Version="10.0.14393.0 (rs1_release.160715-1616)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.40629.0" />
+    <build:Item Name="ProjectGUID" Value="{B06BF5BE-6BDE-4D3E-B53F-B7D6D1EF8253}" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
+  </build:Metadata>
+</Package>

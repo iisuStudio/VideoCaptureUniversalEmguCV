@@ -1,0 +1,1 @@
+c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\VideoCaptureUniversalDemo.Windows.csproj;neutral

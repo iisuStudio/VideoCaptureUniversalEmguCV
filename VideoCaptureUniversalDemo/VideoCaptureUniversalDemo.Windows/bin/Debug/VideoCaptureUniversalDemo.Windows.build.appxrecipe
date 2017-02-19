@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>IISU-NB</Machine>
+    <WindowsUser>IISU</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ca2fecc1-f667-408e-ab38-0ed551346aae</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\VideoCaptureUniversalDemo.Windows.exe">
+      <PackagePath>VideoCaptureUniversalDemo.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Emgu\emgucv-windows-universal-gpu 2.4.9.1847\bin\Emgu.CV.dll">
+      <PackagePath>Emgu.CV.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Emgu\emgucv-windows-universal-gpu 2.4.9.1847\bin\Emgu.Util.dll">
+      <PackagePath>Emgu.Util.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\VideoCaptureUniversalDemo.Windows.xr.xml">
+      <PackagePath>VideoCaptureUniversalDemo.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iisu\documents\visual studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
