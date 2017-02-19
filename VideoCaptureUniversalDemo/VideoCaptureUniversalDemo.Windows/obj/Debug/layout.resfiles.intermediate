@@ -5,3 +5,5 @@ Assets\StoreLogo.scale-100.png
 App.xbf
 MainPage.xbf
 VideoCaptureUniversalDemo.Windows.xr.xml
+opencv_world310.dll
+opencv_world310d.dll

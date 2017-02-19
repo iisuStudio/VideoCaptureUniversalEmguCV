@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VideoCaptureUniversalDemo", "VideoCaptureUniversalDemo", "{B99640DF-AB35-4E7D-AD13-B74D54078B02}"
 EndProject
@@ -10,6 +10,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoCaptureUniversalDemo.Windows", "VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\VideoCaptureUniversalDemo.Windows.csproj", "{B06BF5BE-6BDE-4D3E-B53F-B7D6D1EF8253}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoCaptureUniversalDemo.WindowsPhone", "VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.WindowsPhone\VideoCaptureUniversalDemo.WindowsPhone.csproj", "{12AA5E06-0C41-4FFC-BB28-B901E705BFCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B3AF700F-24B5-461A-B2CD-55E80064E383}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\opencv3.1\build\x64\vc14\bin\opencv_world310.dll = ..\..\..\..\..\..\opencv3.1\build\x64\vc14\bin\opencv_world310.dll
+		..\..\..\..\..\..\opencv3.1\build\x64\vc14\bin\opencv_world310d.dll = ..\..\..\..\..\..\opencv3.1\build\x64\vc14\bin\opencv_world310d.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

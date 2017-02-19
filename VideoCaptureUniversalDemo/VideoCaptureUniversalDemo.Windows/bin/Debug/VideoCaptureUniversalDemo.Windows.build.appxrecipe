@@ -40,6 +40,12 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\opencv_world310.dll">
+      <PackagePath>opencv_world310.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\opencv_world310d.dll">
+      <PackagePath>opencv_world310d.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\VideoCaptureUniversalDemo.Windows.xr.xml">
       <PackagePath>VideoCaptureUniversalDemo.Windows.xr.xml</PackagePath>
     </AppxPackagedFile>

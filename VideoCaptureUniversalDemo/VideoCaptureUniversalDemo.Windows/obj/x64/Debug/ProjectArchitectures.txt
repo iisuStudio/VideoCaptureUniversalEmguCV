@@ -1,0 +1,1 @@
+C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\VideoCaptureUniversalDemo.Windows.csproj;x64

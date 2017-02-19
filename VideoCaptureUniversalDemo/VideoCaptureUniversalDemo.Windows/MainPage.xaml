@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image x:Name="pictureBox1" HorizontalAlignment="Left" Height="422" Margin="90,108,0,0" VerticalAlignment="Top" Width="520"/>
+        <Image x:Name="pictureBox1" HorizontalAlignment="Left" Height="240" Margin="90,108,0,0" VerticalAlignment="Top" Width="320"/>
         <Slider x:Name="Video_seek" HorizontalAlignment="Left" Margin="90,548,0,0" VerticalAlignment="Top" Width="520"/>
         <Button x:Name="button1" Content="Play" HorizontalAlignment="Left" Margin="87,46,0,0" VerticalAlignment="Top" Click="button1_Click_1" Width="106"/>
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="220,49,0,0" VerticalAlignment="Top" Width="390">

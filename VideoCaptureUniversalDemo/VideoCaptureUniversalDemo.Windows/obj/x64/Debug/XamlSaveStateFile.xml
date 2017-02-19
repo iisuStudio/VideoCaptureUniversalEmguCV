@@ -1,9 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <ReferenceAssembly PathName="c:\emgu\emgucv-windesktop 3.1.0.2504\bin\emgu.cv.debuggervisualizers.vs2013.dll" HashGuid="4f77c122-484f-dfe8-65fa-1136979c36d1" />
-    <ReferenceAssembly PathName="c:\emgu\emgucv-windesktop 3.1.0.2504\bin\emgu.cv.ui.dll" HashGuid="a44bac6e-ef2f-dc6f-6a56-8e9bf2028dda" />
-    <ReferenceAssembly PathName="c:\emgu\emgucv-windesktop 3.1.0.2504\bin\emgu.cv.ui.gl.dll" HashGuid="4859dde7-3104-db08-70b0-980e6c899e44" />
+    <LocalAssembly PathName="c:\users\iisu\documents\visual studio 2013\projects\videocaptureuniversaldemo\videocaptureuniversaldemo\videocaptureuniversaldemo.windows\obj\x64\debug\intermediatexaml\videocaptureuniversaldemo.windows.exe" HashGuid="92473ece-ae73-1a1b-73c9-8a87114a037f" />
     <ReferenceAssembly PathName="c:\emgu\emgucv-windesktop 3.1.0.2504\bin\emgu.cv.world.dll" HashGuid="bc61a876-620d-3969-f9d0-ba31233a99d3" />
-    <ReferenceAssembly PathName="c:\emgu\emgucv-windesktop 3.1.0.2504\bin\zedgraph.dll" HashGuid="ebcefaf3-c702-064d-26de-482f72be2fe5" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>IISU-NB</Machine>
+    <WindowsUser>IISU</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>ca2fecc1-f667-408e-ab38-0ed551346aae</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\obj\x64\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>2F4A9CCFABD367327CCC766A814BA05F13D54D5D0279599B4A54120EB6E201E8</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ca2fecc1-f667-408e-ab38-0ed551346aae_1.0.0.0_x64__qm2axbvj5kex4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ca2fecc1-f667-408e-ab38-0ed551346aae_qm2axbvj5kex4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ca2fecc1-f667-408e-ab38-0ed551346aae</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=IISU</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\x64\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-19T15:49:49.511</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\x64\Debug\VideoCaptureUniversalDemo.Windows.exe">
+      <PackagePath>VideoCaptureUniversalDemo.Windows.exe</PackagePath>
+      <Modified>2017-02-19T15:49:48.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Emgu\emgucv-windesktop 3.1.0.2504\bin\Emgu.CV.World.dll">
+      <PackagePath>Emgu.CV.World.dll</PackagePath>
+      <Modified>2016-12-16T06:28:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T11:58:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T11:58:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T11:58:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T11:58:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\x64\Debug\VideoCaptureUniversalDemo.Windows.xr.xml">
+      <PackagePath>VideoCaptureUniversalDemo.Windows.xr.xml</PackagePath>
+      <Modified>2017-02-19T15:31:27.362</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\x64\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2017-02-19T15:31:27.388</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\x64\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2017-02-19T15:35:02.992</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\x64\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2017-02-19T15:49:49.241</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

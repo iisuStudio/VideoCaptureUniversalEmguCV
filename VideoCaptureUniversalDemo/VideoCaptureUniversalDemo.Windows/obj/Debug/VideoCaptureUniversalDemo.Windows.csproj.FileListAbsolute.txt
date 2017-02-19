@@ -33,3 +33,6 @@ C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\Vi
 C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\obj\Debug\qualifiers.txt.intermediate
 C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\obj\Debug\ProjectArchitectures.txt
+C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\obj\Debug\VideoCaptureUniversalDemo.Windows.csprojResolveAssemblyReference.cache
+C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\opencv_world310.dll
+C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\opencv_world310d.dll

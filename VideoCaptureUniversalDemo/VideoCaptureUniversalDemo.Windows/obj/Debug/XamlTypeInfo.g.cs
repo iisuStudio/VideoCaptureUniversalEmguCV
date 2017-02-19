@@ -529,4 +529,3 @@ namespace VideoCaptureUniversalDemo.VideoCaptureUniversalDemo_Windows_XamlTypeIn
 }
 
 
-

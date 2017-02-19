@@ -20,6 +20,7 @@ using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.Storage.Streams;
+using Windows.UI.Popups;
 
 // 空白頁項目範本已記錄在 http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -68,7 +69,7 @@ namespace VideoCaptureUniversalDemo
             return image;
         }
 
-        private async void ProcessFrame(object sender, Windows.ApplicationModel.SuspendingEventArgs arg)
+        private async void ProcessFrame(object sender, EventArgs arg)
         {
             try
             {
@@ -141,13 +142,23 @@ namespace VideoCaptureUniversalDemo
                 if (button1.Content.ToString() == "Play")
                 {
                     #region cameracapture
-                    if (comboBox1.SelectedItem.ToString() == "Capture From Camera")
+                    if (comboBox1.SelectedIndex == 1)
                     {
                         try
                         {
-                            _capture = null;
+
+                        try {
                             _capture = new VideoCapture(0);
-                            _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.Fps, 30);
+                         
+                            
+                        }
+                        catch(Exception excpt)
+                        {
+                            var dialog = new MessageDialog(excpt.Message);
+                            await dialog.ShowAsync();
+                        }
+                            
+                            //_capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.Fps, 30);
                             _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.FrameHeight, 240);
                             _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.FrameWidth, 320);
 
@@ -159,19 +170,21 @@ namespace VideoCaptureUniversalDemo
                             cam = 1;
                             Video_seek.Value = 0;
 
-                            Application.Current.Suspending += new SuspendingEventHandler(ProcessFrame); //https://docs.microsoft.com/en-us/windows/uwp/launch-resume/suspend-an-app
+                            //Application.Current.Suspending += new SuspendingEventHandler(ProcessFrame); //https://docs.microsoft.com/en-us/windows/uwp/launch-resume/suspend-an-app
+                            _capture.ImageGrabbed += ProcessFrame;
                             button1.Content = "Stop";
                             comboBox1.IsEnabled = false;
                         }
                         catch (NullReferenceException excpt)
                         {
-                            //MessageBox.Show(excpt.Message);
+                            var dialog = new MessageDialog(excpt.Message);
+                            await dialog.ShowAsync();
                         }
                     }
                     #endregion cameracapture
 
                     #region filecapture
-                    if (comboBox1.SelectedItem.ToString() == "Capture From File")
+                    if (comboBox1.SelectedIndex == 2)
                     {
                         
 
@@ -181,8 +194,8 @@ namespace VideoCaptureUniversalDemo
                         FileOpenPicker picker = new FileOpenPicker();
                         picker.ViewMode = PickerViewMode.Thumbnail;
                         picker.SuggestedStartLocation = PickerLocationId.VideosLibrary;
-                        picker.FileTypeFilter.Add("MP4|*.mp4");
-
+                        picker.FileTypeFilter.Add(".mp4");
+                        
                         //if (openFileDialog1.ShowDialog() == DialogResult.OK)
                         StorageFile file = await picker.PickSingleFileAsync();
                         if(file != null)
@@ -202,7 +215,8 @@ namespace VideoCaptureUniversalDemo
                                 cam = 0;
                                 Video_seek.Minimum = 0;
                                 Video_seek.Maximum = (int)TotalFrames - 1;
-                                Application.Current.Suspending += new SuspendingEventHandler(ProcessFrame); //https://docs.microsoft.com/en-us/windows/uwp/launch-resume/suspend-an-app
+                                //Application.Current.Suspending += new SuspendingEventHandler(ProcessFrame); //https://docs.microsoft.com/en-us/windows/uwp/launch-resume/suspend-an-app
+                                _capture.ImageGrabbed += ProcessFrame;
                                 button1.Content = "Stop";
                                 comboBox1.IsEnabled = false;
                             }
@@ -220,7 +234,8 @@ namespace VideoCaptureUniversalDemo
                     {
                         _capture.Stop();
 
-                        Application.Current.Suspending -= ProcessFrame;
+                        //Application.Current.Suspending -= ProcessFrame;
+                        _capture.ImageGrabbed -= ProcessFrame;
                         ReleaseData();
                         button1.Content = "Play";
                         comboBox1.IsEnabled = true;

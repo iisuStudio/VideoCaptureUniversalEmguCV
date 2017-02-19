@@ -10,7 +10,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>ca2fecc1-f667-408e-ab38-0ed551346aae</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>E6292715E7AF82D753AF788A8FF745CAA5465427FC953034753357A74E396C23</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>7358593A001EFA634A7ED43A093A36B2198300C01F76DBE94DA3CE8CBB22C2B9</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ca2fecc1-f667-408e-ab38-0ed551346aae_1.0.0.0_neutral__qm2axbvj5kex4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ca2fecc1-f667-408e-ab38-0ed551346aae_qm2axbvj5kex4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>ca2fecc1-f667-408e-ab38-0ed551346aae</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-19T13:49:17.976</Modified>
+      <Modified>2017-02-19T15:59:56.870</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\VideoCaptureUniversalDemo.Windows.exe">
       <PackagePath>VideoCaptureUniversalDemo.Windows.exe</PackagePath>
-      <Modified>2017-02-19T13:48:29.717</Modified>
+      <Modified>2017-02-19T15:59:56.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Emgu\emgucv-windesktop 3.1.0.2504\bin\Emgu.CV.World.dll">
       <PackagePath>Emgu.CV.World.dll</PackagePath>
@@ -54,6 +54,14 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-06-02T11:58:10.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\opencv_world310.dll">
+      <PackagePath>opencv_world310.dll</PackagePath>
+      <Modified>2017-02-19T15:56:28.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\opencv_world310d.dll">
+      <PackagePath>opencv_world310d.dll</PackagePath>
+      <Modified>2017-02-19T15:56:24.723</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\VideoCaptureUniversalDemo.Windows.xr.xml">
       <PackagePath>VideoCaptureUniversalDemo.Windows.xr.xml</PackagePath>
       <Modified>2017-02-19T13:48:29.536</Modified>
@@ -64,11 +72,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2017-02-19T13:48:29.583</Modified>
+      <Modified>2017-02-19T15:14:31.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IISU\Documents\Visual Studio 2013\Projects\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo\VideoCaptureUniversalDemo.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2017-02-19T13:49:17.897</Modified>
+      <Modified>2017-02-19T15:59:56.792</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
