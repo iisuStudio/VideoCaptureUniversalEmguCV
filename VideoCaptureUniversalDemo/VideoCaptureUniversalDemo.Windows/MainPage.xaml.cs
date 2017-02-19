@@ -15,11 +15,11 @@ using Windows.UI.Xaml.Navigation;
 using System.Threading;
 using System.Threading.Tasks;
 using Emgu.CV;
-using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
-using Emgu.Util;
 using Windows.Storage;
 using Windows.Storage.Pickers;
+using Windows.UI.Xaml.Media.Imaging;
+using Windows.Storage.Streams;
 
 // 空白頁項目範本已記錄在 http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -31,8 +31,13 @@ namespace VideoCaptureUniversalDemo
     public sealed partial class MainPage : Page
     {
 
+        public MainPage()
+        {
+            this.InitializeComponent();
+        }
+
+        private VideoCapture _capture = null;
         
-        private Capture _capture = null;
         Image<Bgr, Byte> frame;
              
         int cam = 0;
@@ -43,10 +48,7 @@ namespace VideoCaptureUniversalDemo
         double codec_double = 0;
 
 
-        public MainPage()
-        {
-            this.InitializeComponent();
-        }
+        
 
         private void ReleaseData()
         {
@@ -54,26 +56,41 @@ namespace VideoCaptureUniversalDemo
                 _capture.Dispose();
         }
 
+        public async static Task<BitmapImage> ImageFromBytes(Byte[] bytes)
+        {
+            BitmapImage image = new BitmapImage();
+            using (InMemoryRandomAccessStream stream = new InMemoryRandomAccessStream())
+            {
+                await stream.WriteAsync(bytes.AsBuffer());
+                stream.Seek(0);
+                await image.SetSourceAsync(stream);
+            }
+            return image;
+        }
+
         private async void ProcessFrame(object sender, Windows.ApplicationModel.SuspendingEventArgs arg)
         {
             try
             {
-                Framesno = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES);
+                //Framesno = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES);
+                Framesno = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CapProp.PosFrames);
                 
-                frame = _capture.QueryFrame();
+                frame = _capture.QueryFrame().ToImage<Bgr, Byte>(); //http://www.emgu.com/forum/viewtopic.php?t=7541
 
                 if (frame != null)
                 {
                     
-                    pictureBox1.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(frame.ToBitmap());
+                    pictureBox1.Source = await ImageFromBytes(frame.ToJpegData());
                     if (cam == 0)
                     {
                         Video_seek.Value = (int)(Framesno);
                         
-                        double time_index = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_MSEC);
+                        //double time_index = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_MSEC);
+                        double time_index = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CapProp.PosMsec);
                         //Time_Label.Text = "Time: " + TimeSpan.FromMilliseconds(time_index).ToString().Substring(0, 8);
 
-                        double framenumber = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES);
+                        //double framenumber = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES);
+                        double framenumber = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CapProp.PosFrames);
                         //Frame_lbl.Text = "Frame: " + framenumber.ToString();
 
                         //Thread.Sleep((int)(1000.0 / FrameRate)); http://stackoverflow.com/questions/12641223/thread-sleep-replacement-in-net-for-windows-store
@@ -95,21 +112,23 @@ namespace VideoCaptureUniversalDemo
 
         private void Video_seek_Scroll(object sender, EventArgs e)
         {
-            if (_capture != null)
+            /*if (_capture != null)
             {
-                if (_capture.GrabProcessState == System.Threading.Tasks.TaskStatus.Running) //System.Threading.ThreadState.Running
+                if (_capture. == System.Threading.Tasks.TaskStatus.Running) //System.Threading.ThreadState.Running
                 {
                     _capture.Pause();
                     while (_capture.GrabProcessState == System.Threading.Tasks.TaskStatus.Running) ;//do nothing wait for stop
-                    _capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES, Video_seek.Value);
+                    //_capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES, Video_seek.Value);
+                    _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.PosFrames, Video_seek.Value);
                     _capture.Start();
                 }
                 else
                 {
-                    _capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES, Video_seek.Value);
+                    //_capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES, Video_seek.Value);
+                    _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.PosFrames, Video_seek.Value);
                     ProcessFrame(null, null);
                 }
-            }
+            }*/
         }
 
         private async void button1_Click_1(object sender, RoutedEventArgs e)
@@ -127,10 +146,10 @@ namespace VideoCaptureUniversalDemo
                         try
                         {
                             _capture = null;
-                            _capture = new Capture(0);
-                            _capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FPS, 30);
-                            _capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FRAME_HEIGHT, 240);
-                            _capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FRAME_WIDTH, 320);
+                            _capture = new VideoCapture(0);
+                            _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.Fps, 30);
+                            _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.FrameHeight, 240);
+                            _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.FrameWidth, 320);
 
                             //Time_Label.Text = "Time: ";
                             //Codec_lbl.Text = "Codec: ";
@@ -171,12 +190,12 @@ namespace VideoCaptureUniversalDemo
                             try
                             {
                                 _capture = null;
-                                _capture = new Capture(file.Name);
-                                _capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FRAME_HEIGHT, 240);
-                                _capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FRAME_WIDTH, 320);
-                                FrameRate = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FPS);
-                                TotalFrames = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FRAME_COUNT);
-                                codec_double = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FOURCC);
+                                _capture = new VideoCapture(file.Name);
+                                _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.FrameHeight, 240);
+                                _capture.SetCaptureProperty(Emgu.CV.CvEnum.CapProp.FrameWidth, 320);
+                                FrameRate = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CapProp.Fps);
+                                TotalFrames = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CapProp.FrameCount);
+                                codec_double = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CapProp.FourCC);
                                 byte[] b = BitConverter.GetBytes(Convert.ToUInt32(codec_double));
                                 string s = new string(System.Text.Encoding.UTF8.GetString(b, 0, b.Length).ToCharArray());
                                 //Codec_lbl.Text = "Codec: " + s;

@@ -1,7 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\iisu\documents\visual studio 2013\projects\videocaptureuniversaldemo\videocaptureuniversaldemo\videocaptureuniversaldemo.windows\obj\debug\intermediatexaml\videocaptureuniversaldemo.windows.exe" HashGuid="55d73ef5-7b07-7af0-4dd1-44bd1d954c04" />
-    <ReferenceAssembly PathName="c:\emgu\emgucv-windows-universal-gpu 2.4.9.1847\bin\emgu.cv.dll" HashGuid="0f1d8621-d197-b86f-69bc-d3a416a77481" />
-    <ReferenceAssembly PathName="c:\emgu\emgucv-windows-universal-gpu 2.4.9.1847\bin\emgu.util.dll" HashGuid="eb606ae6-7683-2667-8276-81a4bbd643a0" />
+    <LocalAssembly PathName="c:\users\iisu\documents\visual studio 2013\projects\videocaptureuniversaldemo\videocaptureuniversaldemo\videocaptureuniversaldemo.windows\obj\debug\intermediatexaml\videocaptureuniversaldemo.windows.exe" HashGuid="bc7dbb53-ebbf-b0cf-568d-1ff28021cf60" />
+    <ReferenceAssembly PathName="c:\emgu\emgucv-windesktop 3.1.0.2504\bin\emgu.cv.world.dll" HashGuid="bc61a876-620d-3969-f9d0-ba31233a99d3" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

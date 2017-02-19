@@ -8,6 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="pictureBox1" HorizontalAlignment="Left" Height="422" Margin="90,108,0,0" VerticalAlignment="Top" Width="520"/>
+        <Slider x:Name="Video_seek" HorizontalAlignment="Left" Margin="90,548,0,0" VerticalAlignment="Top" Width="520"/>
+        <Button x:ConnectionId='1' x:Name="button1" Content="Play" HorizontalAlignment="Left" Margin="87,46,0,0" VerticalAlignment="Top"                         Width="106"/>
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="220,49,0,0" VerticalAlignment="Top" Width="390">
+            <TextBox/>
+            <TextBox Text="Capture From Camera"/>
+            <TextBox Text="Capture From File"/>
+        </ComboBox>
 
     </Grid>
 </Page>
